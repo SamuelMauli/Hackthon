@@ -1,0 +1,18 @@
+{
+  "name": "junto-seguros-aviso-de-sinistros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm i && npm run install-all",
+    "install-all": "concurrently \"cd back-end && npm i\" \"cd front-end && npm i\"",
+    "start": "concurrently \"cd back-end && npm start\" \"cd front-end && npm run dev\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
